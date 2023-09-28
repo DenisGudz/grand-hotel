@@ -26,7 +26,7 @@ body{
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    z-index: 2;
+    z-index: 100;
 
 
 }
@@ -106,7 +106,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 50;
 
     transition: 0.3s cubic-bezier(.81, 0,0,1.17);
 
@@ -772,6 +772,10 @@ body{
 
 }
 
+.image{
+    max-width: 61.5rem;
+}
+
 
 .creator-part{
     display: flex;
@@ -779,4 +783,68 @@ body{
     align-items: center;
     background-color: #111;
     padding: 0 4rem;
+}
+
+
+
+@media(max-width: 1400px) {
+    .customers-card-wrapper{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .main-part{
+        flex-direction: column;
+
+    }
+
+    .footer-list{
+        display: flex;
+        gap: 3rem;
+    }
+
+
+}
+
+
+@media(max-width: 1200px){
+    .about-us{
+        flex-direction: column;
+        padding-bottom: 25rem;
+    }
+
+    .about-us-content{
+        margin-bottom: 13rem;
+    }
+
+    .dots{
+        top: 22rem;
+    }
+
+    #bl{
+        left: 5vw;
+        z-index: 7;
+    }
+
+    #br{
+        left: 80vw;
+    }
+
+}
+
+
+
+
+@media(max-width: 1000px){
+    .banner-heading{
+        font-size: 4.7rem;
+    }
+    .banner-paragraph{
+        font-size: 2.6rem;
+    }
+    .banner-button{
+        width: 16rem;
+        font-size: 1.5rem;
+    }
 }
